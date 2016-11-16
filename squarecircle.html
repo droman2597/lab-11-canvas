@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Template </title>
+
+</head>
+<body onclick="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+
+
+
+function draw() {
+
+context.fillRect(30, 30, 100, 100);
+
+
+context.beginPath();
+context.arc(210, 80, 50, 0, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+
+
+
+}
+
+</script>
+</body>
+</html>
