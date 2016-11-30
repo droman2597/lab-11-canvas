@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Template </title>
+
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+function draw() {
+
+
+	for(i=0; i<5; i=i+1){
+
+
+		context.fillStyle="#000000";
+		context.beginPath();
+		context.arc(130+i*100, 140, 40, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle="#000000";
+		context.beginPath();
+		context.arc(100+i*100, 100, 20, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+		context.fillStyle="#000000";
+		context.beginPath();
+		context.arc(159+i*100, 100, 20, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+
+
+}
+				
+}
+</script>
+</body>
+</html>
