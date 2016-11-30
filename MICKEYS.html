@@ -11,33 +11,33 @@
 var sketch = document.getElementById('sketch');
 var context = sketch.getContext("2d");
 function draw() {
+for(j=0; j<20; j=j+1){
 
-
-	for(i=0; i<5; i=i+1){
-
-
+	for(i=0; i<10; i=i+1){
 		context.fillStyle="#000000";
 		context.beginPath();
-		context.arc(130+i*100, 140, 40, 0, 2 * Math.PI, true);
+		context.arc(130+i*100, 140+j*100, 40, 0, 2 * Math.PI, true);
 		context.closePath();
 		context.fill();
 
 		context.fillStyle="#000000";
 		context.beginPath();
-		context.arc(100+i*100, 100, 20, 0, 2 * Math.PI, true);
+		context.arc(100+i*100, 100+j*100, 20, 0, 2 * Math.PI, true);
 		context.closePath();
 		context.fill();
 
 		context.fillStyle="#000000";
 		context.beginPath();
-		context.arc(159+i*100, 100, 20, 0, 2 * Math.PI, true);
+		context.arc(159+i*100, 100+j*100, 20, 0, 2 * Math.PI, true);
 		context.closePath();
 		context.fill();
 
+	}
 
-}
+	}
 				
 }
 </script>
 </body>
 </html>
+
